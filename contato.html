@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <title>Trabalho Desenvolvimento Web</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="bg-light py-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <a class="navbar-brand d-flex" href="index.html">
+                    <h1 class="mb-0" style="font-family: 'Lobster'">Houses</h1>
+                    <img src="assets/img/location.svg" style="width: 50px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-nav"
+                    aria-controls="menu-nav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-loja.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- FIM HEADER -->
+
+    <section class="contato py-4">
+        <div class="container">
+            <h1 class="display-3 mb-5">Fale Conosco</h1>
+
+            <form id="#form">
+                <div class="row">
+                    <div class="col-sm-7">
+
+                        <div class="form-group">
+                            <label class="font-weight-bold" for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="font-weight-bold" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 mb-3">
+                        <div class="form-group">
+                            <label class="font-weight-bold" for="telefone">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="Ex.: 21 99999-9999">
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio" id="radio1" value="option1">
+                            <label class="form-check-label" for="radio">Whatsapp</label>                            
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio" id="radio2" value="option2">
+                            <label class="form-check-label" for="radio">Móvel</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio" id="radio3" value="option3">
+                            <label class="form-check-label" for="radio">Fixo</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-sm-6 mb-3">
+                        <label class="font-weight-bold">Produtos</label>
+                        <select id="select" class="form-control">
+                            <option>Selecionar produto</option>
+                            <option value="1">Casa</option>
+                            <option value="2">Apartamento</option>
+                            <option value="3">República Feminina</option>
+                            <option value="4">República Masculina</option>
+                            <option value="5">República Mista</option>
+                            <option value="6">Despensa</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h6 class="font-weight-bold">Ações</h6>
+                        <div class="form-check form-check-inline mt-2">
+                            <input class="form-check-input" type="checkbox" value="" id="check1">
+                            <label class="form-check-label" for="check1">
+                                Compra
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="check2">
+                            <label class="form-check-label" for="check2">
+                                Aluguel
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="check3">
+                            <label class="form-check-label" for="check3">
+                                Anúncio
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold" for="mensagem">Mensagem</label>
+                    <textarea rows="3" type="textarea" class="form-control" id="mensagem"
+                        placeholder="Envie sua pergunta aqui"></textarea>
+                </div>
+
+
+                <div id="warning" class="alert alert-danger d-none" role="alert">
+                    Falha ao enviar formulário!!
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <input class="btn-enviar btn btn-dark btn-lg" type="submit" value="Enviar">
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION FOOTER -->
+    <footer class="footer bg-secondary text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="d-flex">
+                        <h1 class="mb-0" style="font-family: 'Lobster'">Houses</h1>
+                        <img src="assets/img/location.svg" style="height: 50px;">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <span class="text-light">
+                        Nenhum Direito Reservado
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM SECTION FOOTER -->
+
+
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
